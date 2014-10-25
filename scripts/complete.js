@@ -124,7 +124,7 @@ jQuery(function($){
 		user[ 'notes' ] = {}
 		user[ 'notes' ][PILOT_EVENT_ID] = user[ 'event_notes' ]
 
-		user[ 'has_experience' ] =  user['has_experience'].toLowerCase() == "1"
+		user[ 'has_experience' ] = user['has_experience'].toLowerCase() == "1" || user['has_experience'].toLowerCase() == "false";
 
 		delete user[ 'event_notes' ];
 
@@ -175,7 +175,6 @@ jQuery(function($){
 		user = makeUser();
 		if( checkFields( user )  ){
 			delete user[ 'confirm_password' ]
-			user['has_experience'] = user['has_experience'] == "1"
 
 			console.log(user);
 			putUser( user )
