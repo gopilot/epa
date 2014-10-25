@@ -142,8 +142,8 @@ jQuery(function($){
 				user['emergency_email'] &&
 				user['emergency_phone'] &&
 				user['emergency_email'] &&
-				user['has_experience'] &&
-				(user['has_experience']=="1" ? user['experience_years'] : true) &&
+				(user['has_experience'] || user['has_experience'] === false) &&
+				(user['has_experience'] ? user['experience_years'] : true) &&
 				user['shirt_type'] &&
 				user['shirt_size'] &&
 				user['password'];
