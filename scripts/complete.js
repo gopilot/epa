@@ -180,7 +180,8 @@ jQuery(function($){
 			console.log(user);
 			putUser( user )
 		}else{
-			console.log("error", user)
+			console.log("error", user);
+			clearTimeout(submitTimer);
 			$('i.status:not(.pe-7s-check)').addClass('pe-7s-close-circle');
 		}
 	});
