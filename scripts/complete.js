@@ -124,7 +124,7 @@ jQuery(function($){
 		user[ 'notes' ] = {}
 		user[ 'notes' ][PILOT_EVENT_ID] = user[ 'event_notes' ]
 
-		user[ 'has_experience' ] = boolean( user['has_experience'] )
+		user[ 'has_experience' ] =  user['has_experience'].toLowerCase() == "1"
 
 		delete user[ 'event_notes' ];
 
