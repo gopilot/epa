@@ -16,30 +16,30 @@ html
                     h1.modal-title Register for #{title} - $#{price}
                     form.register-form(novalidate)
                         .input-container.empty
-                            input.name(type="text" placeholder="Full Name")
+                            input.name(name="name" type="text" placeholder="Full Name")
                             i.pe-7s-user.left
                             i.pe-7s-check.input-check.right
                             i.pe-7s-close-circle.input-error.right
                         .input-error-text.name
                         .input-container.empty
-                            input.email(type="email" placeholder="Email Address")
+                            input.email(name="email" type="email" placeholder="Email Address")
                             i.pe-7s-mail.left
                             i.pe-7s-check.input-check.right
                             i.pe-7s-close-circle.input-error.right
                         .input-error-text.email
                         .input-container.credit-card
                             .input-container.empty
-                                input.cc-num(type="text" pattern='[0-9]*' placeholder="Credit Card" novalidate)
+                                input.cc-num(name="cc-number" type="text" pattern='[0-9]*' placeholder="Credit Card" novalidate)
                                 i.pe-7s-credit.left
                                 i.card.input-check.right
                                 i.pe-7s-close-circle.input-error.right
                             .input-container.half.empty
-                                input.cc-cvc(type="text" pattern='[0-9]*' placeholder="CVC" novalidate)
+                                input.cc-cvc(name="cc-csc" type="text" pattern='[0-9]*' placeholder="CVC" novalidate)
                                 i.pe-7s-lock.left
                                 i.pe-7s-check.input-check.right
                                 i.pe-7s-close-circle.input-error.right
                             .input-container.half.empty
-                                input.cc-exp(type="text" pattern='[0-9]*' placeholder="MM/YY" novalidate)
+                                input.cc-exp(name="cc-exp" type="text" pattern='[0-9]*' placeholder="MM/YY" novalidate)
                                 i.pe-7s-date.left
                                 i.pe-7s-check.input-check.right
                                 i.pe-7s-close-circle.input-error.right
