@@ -194,6 +194,7 @@ jQuery(function($){
 		})
 		.done(function(data, status){
 			console.log(data, status)
+			checkSubmit()
 			if(data.active){
 				$(self).parent().removeClass('error');
 				$(".js-total").text(" $" + (PILOT_EVENT_PRICE - data.amount) );
