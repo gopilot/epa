@@ -194,7 +194,6 @@ jQuery(function($){
 		})
 		.done(function(data, status){
 			console.log(data, status)
-			checkSubmit()
 			if(data.active){
 				$(self).parent().removeClass('error');
 				$(".js-total").text(" $" + (PILOT_EVENT_PRICE - data.amount) );
@@ -213,6 +212,7 @@ jQuery(function($){
 				$('.input-error-text.discount').text("Discount Expired");
 				$('.input-error-text.discount').addClass('show');
 			}
+			checkSubmit()
 		});
 	});
 
